@@ -31,3 +31,16 @@ build/
 
 ### VS Code ###
 .vscode/
+/src/main/resources/webapp/bookstore-app/node_modules/
+/src/main/resources/webapp/bookstore-app/.browserslistrc
+/src/main/resources/webapp/bookstore-app/.editorconfig
+/src/main/resources/webapp/bookstore-app/angular.json
+/src/main/resources/webapp/bookstore-app/karma.conf.js
+/src/main/resources/webapp/bookstore-app/package.json
+/src/main/resources/webapp/bookstore-app/package-lock.json
+/src/main/resources/webapp/bookstore-app/README.md
+/src/main/resources/webapp/bookstore-app/tsconfig.app.json
+/src/main/resources/webapp/bookstore-app/tsconfig.json
+/src/main/resources/webapp/bookstore-app/tsconfig.spec.json
+/src/main/resources/webapp/bookstore-app/.angular/cache/14.2.9/
+/src/main/resources/webapp/bookstore-app/node_modules_/

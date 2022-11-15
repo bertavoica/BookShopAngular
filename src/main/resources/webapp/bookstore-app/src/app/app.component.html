@@ -1,0 +1,39 @@
+<div align='center'><h1>Bookstore CRUD with Angular</h1></div>
+
+<div>
+  <table class="table" style="width: 80%">
+    <tr>
+      <th>Title</th>
+      <th>Author</th>
+      <th>ID</th>
+      <th></th>
+    </tr>
+    <tr *ngFor="let book of books">
+      <td>
+        {{book.title}}
+      </td>
+      <td>
+        {{book.author}}
+      </td>
+      <td>
+        {{book.id}}
+      </td>
+    </tr>
+  </table>
+</div>
+<div>
+  <p>
+    <button (click)="addBook()"> Add Book</button>
+  </p>
+</div>
+<div>
+  <p>
+    <button (click)="updateBook()"> Update Book</button>
+  </p>
+</div>
+<div>
+  <label> Type the id of the book you want to delete: </label>
+  <input type="text" class="form-control" [(ngModel)]="id">
+  <button type="button" (click)="deleteBook()">Delete book</button>
+</div>
+<router-outlet></router-outlet>
