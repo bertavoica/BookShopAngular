@@ -16,23 +16,6 @@ import java.util.stream.Stream;
 
 @SpringBootApplication
 public class SpringBootAngularProjectApplication {
-    @Value("${split.io.api.key}")
-    private String splitApiKey;
-
-    @Bean
-    public SplitClient splitClient() throws Exception {
-        SplitClientConfig config = SplitClientConfig.builder()
-                .setBlockUntilReadyTimeout(10000)
-                .enableDebug()
-                .build();
-
-        SplitFactory splitFactory = SplitFactoryBuilder.build(splitApiKey, config);
-        SplitClient client = splitFactory.client();
-        client.blockUntilReady();
-
-        return client;
-    }
-
     @Bean
     ApplicationRunner init(BookRepository repository) {
         // Save our starter set of books
@@ -47,5 +30,4 @@ public class SpringBootAngularProjectApplication {
     public static void main(String[] args) {
         SpringApplication.run(SpringBootAngularProjectApplication.class, args);
     }
-
 }
